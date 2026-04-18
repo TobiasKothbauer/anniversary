@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Styles ──────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-cream text-charcoal antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  /* Prevent layout shift while fonts load */
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* ─── Component Utilities ──────────────────────────────────────────────────── */
+@layer components {
+  /* Primary button: dark outline, fills on hover */
+  .btn-primary {
+    @apply inline-block px-8 py-3.5
+           border border-charcoal text-charcoal
+           text-xs tracking-[0.25em] uppercase font-medium
+           transition-all duration-300 ease-out cursor-pointer
+           select-none;
+  }
+  .btn-primary:hover {
+    @apply bg-charcoal text-cream;
+  }
+  .btn-primary:focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-cream;
+  }
+
+  /* Ghost button: for use on dark backgrounds */
+  .btn-ghost {
+    @apply inline-block px-8 py-3.5
+           border border-cream/60 text-cream
+           text-xs tracking-[0.25em] uppercase font-medium
+           transition-all duration-300 ease-out cursor-pointer
+           select-none;
+  }
+  .btn-ghost:hover {
+    @apply bg-cream/10 border-cream;
+  }
+  .btn-ghost:focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-charcoal;
+  }
+
+  /* Small all-caps label used above section titles */
+  .section-label {
+    @apply text-[10px] tracking-[0.35em] uppercase text-charcoal-light font-medium;
+  }
+
+  /* Section heading style */
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-charcoal font-light leading-tight;
+  }
+
+  /* Decorative divider — three dots with lines */
+  .divider {
+    @apply flex items-center justify-center gap-4;
+  }
+  .divider::before,
+  .divider::after {
+    content: '';
+    @apply block h-px w-12 bg-gold-light;
+  }
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4B896;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8957A;
+}
+
+/* ─── Image Grain Overlay ──────────────────────────────────────────────────── */
+/* Adds a subtle film-grain texture on top of photos for a premium look */
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+  border-radius: inherit;
+}
+
+/* ─── Modal Body Lock ──────────────────────────────────────────────────────── */
+body.modal-open {
+  overflow: hidden;
+}
