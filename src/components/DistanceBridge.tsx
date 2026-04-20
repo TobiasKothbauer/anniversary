@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { siteConfig } from '../data/memories'
+import SecretOrb from './SecretOrb'
 
 // ─── Live clock hook ─────────────────────────────────────────────────────────
 function useLocalTime(timezone: string) {
@@ -138,7 +139,13 @@ export default function DistanceBridge() {
         </motion.h2>
 
         {/* ── Arc visualization ────────────────────────────────────────── */}
-        <ConnectionArc />
+        <div className="relative inline-block">
+          <ConnectionArc />
+          {/* Secret hidden at the peak of the arc */}
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 -translate-y-1">
+            <SecretOrb secretId="secret-bridge" />
+          </div>
+        </div>
 
         {/* ── City cards row ───────────────────────────────────────────── */}
         <motion.div

@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { siteConfig } from '../data/memories'
+import SecretOrb from './SecretOrb'
 
 // ─── Floating Particles ────────────────────────────────────────────────────
 // Decorative ambient dots that float gently in the background.
@@ -73,7 +74,7 @@ export default function Hero() {
   const titleLines = siteConfig.heroTitle.split('\n')
 
   const handleScroll = () => {
-    document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -124,7 +125,7 @@ export default function Hero() {
           ))}
         </motion.h1>
 
-        {/* Decorative separator */}
+        {/* Decorative separator — the tiny hidden orb lives here, camouflaged as decoration */}
         <motion.div
           className="mx-auto mb-7 flex items-center justify-center gap-3"
           custom={2}
@@ -134,7 +135,7 @@ export default function Hero() {
           aria-hidden="true"
         >
           <div className="h-px w-14 bg-gold-light" />
-          <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+          <SecretOrb secretId="secret-hero" className="-my-2" />
           <div className="h-px w-14 bg-gold-light" />
         </motion.div>
 

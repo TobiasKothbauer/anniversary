@@ -1,27 +1,28 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { memories, siteConfig, type Memory } from '../data/memories'
+import { useAdventure } from '../context/AdventureContext'
+import SecretOrb from './SecretOrb'
 
 // ─── Props ───────────────────────────────────────────────────────────────────
 
 interface MemoryWallProps {
   onSelect: (memory: Memory) => void
-  /** Number of memories the user has already opened — unlocks the hidden card at 3 */
-  openedCount: number
 }
 
 // ─── Deterministic card rotations ────────────────────────────────────────────
 // Small tilts give the wall a natural, physical feel without being distracting.
 // CUSTOMIZE: Change these values (in degrees) to adjust the tilt angles.
-const ROTATIONS = [-1.4, 0.9, -0.6, 1.7, -1.1, 0.7, -1.9, 1.3, -0.4, 1.6]
+const ROTATIONS = [-1.4, 0.9, -0.6, 1.7, -1.1, 0.7, -1.9, 1.3, -0.4, 1.6, -1.2, 0.5, -0.8, 1.4, -0.3, 1.0]
 
 // How many memories to open before the hidden card reveals itself
 const UNLOCK_AT = 3
 
 // ─── Memory Wall ─────────────────────────────────────────────────────────────
 
-export default function MemoryWall({ onSelect, openedCount }: MemoryWallProps) {
-  const hiddenUnlocked = openedCount >= UNLOCK_AT
+export default function MemoryWall({ onSelect }: MemoryWallProps) {
+  const { openedMemories } = useAdventure()
+  const hiddenUnlocked = openedMemories >= UNLOCK_AT
 
   // Filter: show normal memories + hidden ones once unlocked
   const visible = memories.filter(m => !m.hidden || hiddenUnlocked)
@@ -32,7 +33,7 @@ export default function MemoryWall({ onSelect, openedCount }: MemoryWallProps) {
       className="py-24 md:py-32 bg-cream-dark"
       aria-label="Memory wall"
     >
-      <div className="max-w-6xl mx-auto px-8">
+      <div style={{ maxWidth: '100rem' }} className="mx-auto px-8">
 
         {/* Section header */}
         <motion.div
@@ -42,7 +43,10 @@ export default function MemoryWall({ onSelect, openedCount }: MemoryWallProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.85 }}
         >
-          <p className="section-label mb-5">Our memories</p>
+          <div className="flex items-center justify-center gap-2">
+            <p className="section-label mb-5">Our memories</p>
+            <SecretOrb secretId="secret-wall-1" className="-mt-4" />
+          </div>
           <h2 className="section-title">Click to explore</h2>
           {/* CUSTOMIZE: wallIntro in siteConfig */}
           <p className="text-charcoal-light text-sm mt-5 font-light max-w-md mx-auto leading-relaxed">
@@ -52,10 +56,8 @@ export default function MemoryWall({ onSelect, openedCount }: MemoryWallProps) {
 
         {/* Masonry photo wall — CSS columns */}
         <div
-          style={{
-            columnCount: 3,
-            columnGap: '1.25rem',
-          }}
+          className="columns-2 md:columns-3 lg:columns-4"
+          style={{ columnGap: '1.25rem' }}
         >
           {visible.map((memory, i) => {
             const rotation = ROTATIONS[i % ROTATIONS.length]
@@ -84,15 +86,18 @@ export default function MemoryWall({ onSelect, openedCount }: MemoryWallProps) {
         {/* "Unlock" teaser — shown until the hidden card is revealed */}
         <AnimatePresence>
           {!hiddenUnlocked && (
-            <motion.p
-              className="text-center text-charcoal-light/40 text-xs tracking-[0.25em] uppercase mt-8"
+            <motion.div
+              className="flex items-center justify-center gap-3 mt-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 1 }}
             >
-              Keep exploring — something is waiting.
-            </motion.p>
+              <p className="text-charcoal-light/40 text-xs tracking-[0.25em] uppercase">
+                Keep exploring — something is waiting.
+              </p>
+              <SecretOrb secretId="secret-wall-2" />
+            </motion.div>
           )}
         </AnimatePresence>
 

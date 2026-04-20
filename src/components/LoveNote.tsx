@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { loveNote, siteConfig } from '../data/memories'
+import SecretOrb from './SecretOrb'
 
 interface LoveNoteProps {
   onOpenLetter: () => void
@@ -62,9 +63,12 @@ export default function LoveNote({ onOpenLetter }: LoveNoteProps) {
             <p className="text-charcoal-muted text-base font-light">
               {loveNote.signOff}
             </p>
-            <p className="font-script text-5xl text-charcoal" aria-label={`Signature: ${loveNote.signature}`}>
-              {loveNote.signature}
-            </p>
+            <div className="flex items-end gap-3">
+              <p className="font-script text-5xl text-charcoal" aria-label={`Signature: ${loveNote.signature}`}>
+                {loveNote.signature}
+              </p>
+              <SecretOrb secretId="secret-note" className="mb-2" />
+            </div>
           </div>
         </motion.div>
 

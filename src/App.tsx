@@ -1,40 +1,50 @@
 import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
+
+import { AdventureProvider, useAdventure } from './context/AdventureContext'
 import Hero from './components/Hero'
+import ChapterDivider from './components/ChapterDivider'
+import StoryScroll from './components/StoryScroll'
 import MemoryWall from './components/MemoryWall'
-import GalleryModal from './components/GalleryModal'
 import DistanceBridge from './components/DistanceBridge'
 import LoveNote from './components/LoveNote'
+import FinalMessage from './components/FinalMessage'
+import GalleryModal from './components/GalleryModal'
 import LetterModal from './components/LetterModal'
+import ExplorationTracker from './components/ExplorationTracker'
+import SecretFoundBanner from './components/SecretFoundBanner'
 import type { Memory } from './data/memories'
 
-export default function App() {
-  // Which memory gallery is open (null = none)
+// Inner app has access to AdventureContext
+function AppInner() {
+  const { incrementOpenedMemories } = useAdventure()
   const [selectedMemory, setSelectedMemory] = useState<Memory | null>(null)
-  // Track how many memories have been opened — used to unlock the hidden card
-  const [openedCount, setOpenedCount] = useState(0)
-  // Surprise letter modal
-  const [isLetterOpen, setIsLetterOpen] = useState(false)
+  const [isLetterOpen, setIsLetterOpen]     = useState(false)
 
   const handleOpenMemory = (memory: Memory) => {
     setSelectedMemory(memory)
-    // Only increment for non-hidden memories to keep the easter egg fair
-    if (!memory.hidden) setOpenedCount(c => c + 1)
+    if (!memory.hidden) incrementOpenedMemories()
   }
 
   return (
     <main className="relative bg-cream min-h-screen overflow-x-hidden">
       <Hero />
 
-      <MemoryWall
-        onSelect={handleOpenMemory}
-        openedCount={openedCount}
-      />
+      <ChapterDivider id="story" number="I" title="Where It Started" />
+      <StoryScroll />
 
+      <ChapterDivider number="II" title="The Memories" />
+      <MemoryWall onSelect={handleOpenMemory} />
+
+      <ChapterDivider number="III" title="Across the Distance" dark />
       <DistanceBridge />
+
+      <ChapterDivider number="IV" title="What I Want You to Know" />
       <LoveNote onOpenLetter={() => setIsLetterOpen(true)} />
 
-      {/* Gallery modal — opens when a memory card is clicked */}
+      <FinalMessage />
+
+      {/* Gallery modal */}
       <AnimatePresence>
         {selectedMemory && (
           <GalleryModal
@@ -54,6 +64,18 @@ export default function App() {
           />
         )}
       </AnimatePresence>
+
+      {/* Fixed UI overlays */}
+      <ExplorationTracker />
+      <SecretFoundBanner />
     </main>
+  )
+}
+
+export default function App() {
+  return (
+    <AdventureProvider>
+      <AppInner />
+    </AdventureProvider>
   )
 }
