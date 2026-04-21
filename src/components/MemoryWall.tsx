@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { memories, siteConfig, type Memory } from '../data/memories'
+import { memories, siteConfig, Memory } from '../data/memories'
 import { useAdventure } from '../context/AdventureContext'
 import SecretOrb from './SecretOrb'
 

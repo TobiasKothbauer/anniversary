@@ -467,32 +467,37 @@ export const memories: Memory[] = [
   // ── Memory 11 ──────────────────────────────────────────────────────────────
   {
     id: '11',
-    title: 'Memory 11',                          // CUSTOMIZE
+    title: 'Letzten Tage vorm Flug genießen',                          // CUSTOMIZE
     date: '2025',                                // CUSTOMIZE
-    location: 'Somewhere',                       // CUSTOMIZE
-    coverImage: 'https://picsum.photos/seed/m11a/600/800',
+    location: 'Gmunden, Wien, Linz',                       // CUSTOMIZE
+    coverImage: '/images/11/IMG_6918.JPEG',
     coverImageAlt: 'Memory 11',                  // CUSTOMIZE
     orientation: 'landscape',
     photos: [
-      { src: 'https://picsum.photos/seed/m11a/800/600', caption: 'Caption 1' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m11b/800/600', caption: 'Caption 2' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m11c/800/600', caption: 'Caption 3' },  // CUSTOMIZE
+      { src: '/images/11/laruffa.JPEG', caption: 'Meeting the fam' },  // CUSTOMIZE
+      { src: '/images/11/IMG_6777.JPEG', caption: 'Gmunden <3' },  // CUSTOMIZE
+      { src: '/images/11/IMG_6782.JPEG', caption: 'Künstlerisch begabt' },  // CUSTOMIZE
+      { src: '/images/11/pizza.JPEG', caption: 'Des Platzerl woa so coool' },  // CUSTOMIZE
+      { src: '/images/11/IMG_6932.JPEG', caption: 'Time to say goodbye (for now)' },  // CUSTOMIZE
     ],
   },
 
   // ── Memory 12 ──────────────────────────────────────────────────────────────
   {
     id: '12',
-    title: 'Memory 12',                          // CUSTOMIZE
+    title: 'Facetime moments',                          // CUSTOMIZE
     date: '2025',                                // CUSTOMIZE
-    location: 'Somewhere',                       // CUSTOMIZE
-    coverImage: 'https://picsum.photos/seed/m12a/600/800',
+    location: 'Online',                       // CUSTOMIZE
+    coverImage: '/images/12/Bild1.png',
     coverImageAlt: 'Memory 12',                  // CUSTOMIZE
     orientation: 'portrait',
     photos: [
-      { src: 'https://picsum.photos/seed/m12a/600/800', caption: 'Caption 1' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m12b/600/800', caption: 'Caption 2' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m12c/600/800', caption: 'Caption 3' },  // CUSTOMIZE
+      { src: '/images/12/Bild1.png', caption: 'Always up for a smile <3' },  // CUSTOMIZE
+      { src: '/images/12/IMG_9558.PNG', caption: 'Lockige Haareeeee'},  // CUSTOMIZE
+      { src: '/images/12/IMG_2728.PNG', caption: 'Zusammen schlafen genießen'},  // CUSTOMIZE
+      { src: '/images/12/Bild2.png', caption: 'Einfach die Süßeste!' },  // CUSTOMIZE
+      { src: '/images/12/IMG_7194.PNG', caption: '1 Plattform hat ned gereicht ;)' },  // CUSTOMIZE
+      { src: '/images/12/IMG_9732.JPG', caption: 'Im Herzen warst immer dabei ;)' },  // CUSTOMIZE
     ],
   },
 
@@ -515,48 +520,59 @@ export const memories: Memory[] = [
   // ── Memory 14 ──────────────────────────────────────────────────────────────
   {
     id: '14',
-    title: 'Memory 14',                          // CUSTOMIZE
+    title: 'New York',                          // CUSTOMIZE
     date: '2025',                                // CUSTOMIZE
-    location: 'Somewhere',                       // CUSTOMIZE
-    coverImage: 'https://picsum.photos/seed/m14a/600/800',
+    location: 'New York',                       // CUSTOMIZE
+    coverImage: '/images/14/IMG_0020.JPEG',
     coverImageAlt: 'Memory 14',                  // CUSTOMIZE
     orientation: 'portrait',
     photos: [
-      { src: 'https://picsum.photos/seed/m14a/600/800', caption: 'Caption 1' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m14b/600/800', caption: 'Caption 2' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m14c/600/800', caption: 'Caption 3' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0020.JPEG', caption: 'First day' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0157.JPEG', caption: 'Nicht so nett von dir!' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0530.JPEG', caption: 'Dafür is des umso cuter ;)' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0705.JPEG', caption: 'Dehnen ist wichtig!' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0864.JPEG', caption: 'Weihnachten 2026 <3' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0893.JPEG', caption: 'Bussi' },  // CUSTOMIZE
+      { src: '/images/14/IMG_1178.JPEG', caption: 'Kein Kommentar ;)' },  // CUSTOMIZE
     ],
   },
 
   // ── Memory 15 ──────────────────────────────────────────────────────────────
   {
     id: '15',
-    title: 'Memory 15',                          // CUSTOMIZE
-    date: '2025',                                // CUSTOMIZE
-    location: 'Somewhere',                       // CUSTOMIZE
-    coverImage: 'https://picsum.photos/seed/m15a/600/800',
+    title: 'Miami',                          // CUSTOMIZE
+    date: '2025/2026',                                // CUSTOMIZE
+    location: 'Florida',                       // CUSTOMIZE
+    coverImage: '/images/15/IMG_1509.JPEG',
     coverImageAlt: 'Memory 15',                  // CUSTOMIZE
     orientation: 'landscape',
     photos: [
-      { src: 'https://picsum.photos/seed/m15a/800/600', caption: 'Caption 1' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m15b/800/600', caption: 'Caption 2' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m15c/800/600', caption: 'Caption 3' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1509.JPEG', caption: 'Golden Hour genießen' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1302.JPEG', caption: 'OMG!!!!!!' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1626.JPG', caption: 'Bussi ;)' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1999.JPEG', caption: 'Roadtrip mit einer schönen Aussicht (wenn i am Steuer war)' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1689.JPG', caption: 'Silvester <3' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1448.JPEG', caption: 'Look at this bread' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1795.JPEG', caption: 'Kurz darauf habn ma Delfine geseeeeeehn' },  // CUSTOMIZE
+      { src: '/images/15/IMG_1501.JPEG', caption: 'Favourite pic <3' },  // CUSTOMIZE
     ],
   },
 
   // ── Memory 16 ──────────────────────────────────────────────────────────────
   {
     id: '16',
-    title: 'Memory 16',                          // CUSTOMIZE
-    date: '2025',                                // CUSTOMIZE
-    location: 'Somewhere',                       // CUSTOMIZE
-    coverImage: 'https://picsum.photos/seed/m16a/600/800',
-    coverImageAlt: 'Memory 16',                  // CUSTOMIZE
+    title: 'Georgia',                          // CUSTOMIZE
+    date: '2026, January',                                // CUSTOMIZE
+    location: 'Atlanta',                       // CUSTOMIZE
+    coverImage: '/images/16/IMG_2459.JPEG',
+    coverImageAlt: 'Memory 16',                    // CUSTOMIZE
     orientation: 'portrait',
     photos: [
-      { src: 'https://picsum.photos/seed/m16a/600/800', caption: 'Caption 1' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m16b/600/800', caption: 'Caption 2' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m16c/600/800', caption: 'Caption 3' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2459.JPEG', caption: 'Wellness-Abend' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2365.JPEG', caption: 'Es woa so gut' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2349.JPEG', caption: 'A paar Plastiksackerl' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2078.JPEG', caption: 'Vorstufe Grand Canyon'},  // CUSTOMIZE
+      { src: '/images/16/IMG_2386.JPEG', caption: 'Leider haben mas ned aufd Leinwand gschafft' },  // CUSTOMIZE
     ],
   },
 
