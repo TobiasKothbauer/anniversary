@@ -161,7 +161,7 @@ export const memories: Memory[] = [
     photos: [
       {
         src: '/images/02/IMG_4773.JPEG',    // CUSTOMIZE
-        caption: 'We walked for hours without really noticing.',
+        caption: 'Riecht echt gut...',
       },
       {
         src: '/images/02/ananas.jpg',    // CUSTOMIZE
@@ -192,6 +192,10 @@ export const memories: Memory[] = [
     orientation: 'portrait',
     photos: [
       {
+        src: '/images/03/IMG_4876.JPEG',     // CUSTOMIZE
+        caption: 'so schön <3',
+      },
+      {
         src: '/images/03/IMG_4880.JPEG',     // CUSTOMIZE
         caption: 'Lecker Schmecker!',
       },
@@ -215,6 +219,10 @@ export const memories: Memory[] = [
     coverImageAlt: 'A long summer evening',       // CUSTOMIZE
     orientation: 'landscape',
     photos: [
+      {
+        src: '/images/04/IMG_4820.JPEG',    // CUSTOMIZE
+        caption: 'Der Bizeps brennt!!',
+      },
       {
         src: '/images/04/IMG_4814.JPEG',    // CUSTOMIZE
         caption: 'lachs hat danach besonders gut gschmeckt  ;)',
@@ -245,6 +253,10 @@ export const memories: Memory[] = [
     coverImageAlt: 'The goodbye at the airport',  // CUSTOMIZE
     orientation: 'landscape',
     photos: [
+      {
+        src: '/images/05/12d57620-af02-4349-a2c7-a27d1362fcbe.jpg',     // CUSTOMIZE
+        caption: 'cutes Bild',
+      },
       {
         src: '/images/05/IMG_4936.JPG',     // CUSTOMIZE
         caption: 'sleepy zugfahren',
@@ -294,6 +306,10 @@ export const memories: Memory[] = [
     coverImageAlt: 'Alle deine friends mal kennenlernen',           // CUSTOMIZE
     orientation: 'landscape',
     photos: [
+      {
+        src: '/images/06/IMG_4948.JPEG',    // CUSTOMIZE
+        caption: 'Alle deine friends mal kennenlernen',
+      },
       {
         src: '/images/06/IMG_4949.JPEG',    // CUSTOMIZE
         caption: 'cuteeeee',
@@ -388,6 +404,10 @@ export const memories: Memory[] = [
     orientation: 'portrait',
     photos: [
       {
+        src: '/images/09/IMG_4839.JPEG',
+        caption: '<3>',
+      },
+      {
         src: '/images/09/269ed78a-b4c0-4c1b-ac6e-e74f1376c6b3.JPEG',
         caption: 'Tobi in Lederhose',
       },
@@ -429,6 +449,10 @@ export const memories: Memory[] = [
     coverImageAlt: '',     // CUSTOMIZE
     orientation: 'portrait',
     photos: [
+      {
+        src: '/images/10/16de40af-b452-49b8-8ac9-2481660d708a.jpg',
+        caption: 'bussi',
+      },
       {
         src: '/images/10/7ed6e8e6-ac28-45b0-8dd8-ea1eb6bc4188.jpg',
         caption: 'immer nu funny',
@@ -474,6 +498,7 @@ export const memories: Memory[] = [
     coverImageAlt: 'Memory 11',                  // CUSTOMIZE
     orientation: 'landscape',
     photos: [
+      { src: '/images/11/IMG_6918.JPEG', caption: 'Kind of weird but okayyy' },  // CUSTOMIZE
       { src: '/images/11/laruffa.JPEG', caption: 'Meeting the fam' },  // CUSTOMIZE
       { src: '/images/11/IMG_6777.JPEG', caption: 'Gmunden <3' },  // CUSTOMIZE
       { src: '/images/11/IMG_6782.JPEG', caption: 'Künstlerisch begabt' },  // CUSTOMIZE
@@ -504,16 +529,20 @@ export const memories: Memory[] = [
   // ── Memory 13 ──────────────────────────────────────────────────────────────
   {
     id: '13',
-    title: 'Memory 13',                          // CUSTOMIZE
+    title: 'Zomgewürfelte Momente',                          // CUSTOMIZE
     date: '2025',                                // CUSTOMIZE
-    location: 'Somewhere',                       // CUSTOMIZE
-    coverImage: 'https://picsum.photos/seed/m13a/600/800',
+    location: 'Everywhere',                       // CUSTOMIZE
+    coverImage: '/images/13/IMG_6217.JPEG',
     coverImageAlt: 'Memory 13',                  // CUSTOMIZE
     orientation: 'landscape',
     photos: [
-      { src: 'https://picsum.photos/seed/m13a/800/600', caption: 'Caption 1' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m13b/800/600', caption: 'Caption 2' },  // CUSTOMIZE
-      { src: 'https://picsum.photos/seed/m13c/800/600', caption: 'Caption 3' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6217.JPEG', caption: 'Skateboardn muss i nu bissl üben' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6212.JPEG', caption: 'Sunset <3' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6136.JPEG', caption: 'Glorious Bastards' },  // CUSTOMIZE
+      { src: '/images/13/IMG_5268.JPEG', caption: 'Mohnnudelfabrik' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6363.JPEG', caption: 'Catching Rainbows' },  // CUSTOMIZE
+      { src: '/images/13/62661b1d-b245-4a5b-bf15-118f543bd380.jpg', caption: 'Brauerrei-Führer Ali' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6373.JPEG', caption: 'Kinoooo' },  // CUSTOMIZE
     ],
   },
 
@@ -530,8 +559,9 @@ export const memories: Memory[] = [
       { src: '/images/14/IMG_0020.JPEG', caption: 'First day' },  // CUSTOMIZE
       { src: '/images/14/IMG_0157.JPEG', caption: 'Nicht so nett von dir!' },  // CUSTOMIZE
       { src: '/images/14/IMG_0530.JPEG', caption: 'Dafür is des umso cuter ;)' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0429.JPEG', caption: 'Klares Highlight von New York: Die Taube' },  // CUSTOMIZE
       { src: '/images/14/IMG_0705.JPEG', caption: 'Dehnen ist wichtig!' },  // CUSTOMIZE
-      { src: '/images/14/IMG_0864.JPEG', caption: 'Weihnachten 2026 <3' },  // CUSTOMIZE
+      { src: '/images/14/IMG_0864.JPEG', caption: 'Weihnachten 2025 <3' },  // CUSTOMIZE
       { src: '/images/14/IMG_0893.JPEG', caption: 'Bussi' },  // CUSTOMIZE
       { src: '/images/14/IMG_1178.JPEG', caption: 'Kein Kommentar ;)' },  // CUSTOMIZE
     ],
