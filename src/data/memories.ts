@@ -288,7 +288,7 @@ export const memories: Memory[] = [
     location: 'Freistadt, Linz',               // CUSTOMIZE
     coverImage: '/images/06/IMG_4948.JPEG',  // CUSTOMIZE
     coverImageAlt: 'Alle deine friends mal kennenlernen',           // CUSTOMIZE
-    orientation: 'landscape',
+    orientation: 'portrait',
     photos: [
       {
         src: '/images/06/IMG_4948.JPEG',    // CUSTOMIZE
@@ -321,7 +321,7 @@ export const memories: Memory[] = [
     location: 'Dort wo die sonne ist',          // CUSTOMIZE
     coverImage: '/images/07/IMG_5940.JPEG',  // CUSTOMIZE
     coverImageAlt: 'Reuniting after the distance', // CUSTOMIZE
-    orientation: 'portrait',
+    orientation: 'landscape',
     photos: [
       {
         src: '/images/07/IMG_6054.JPEG',    // CUSTOMIZE
@@ -360,7 +360,7 @@ export const memories: Memory[] = [
     location: 'Wg Hagenberg',                // CUSTOMIZE
     coverImage: '/images/08/IMG_6389.JPEG',  // CUSTOMIZE
     coverImageAlt: "the beginning...",      // CUSTOMIZE
-    orientation: 'landscape',
+    orientation: 'portrait',
     photos: [
       {
         src: '/images/08/IMG_6389.JPEG',    // CUSTOMIZE
@@ -431,7 +431,7 @@ export const memories: Memory[] = [
     location: 'Weinfelder',                  // CUSTOMIZE
     coverImage: '/images/10/16de40af-b452-49b8-8ac9-2481660d708a.jpg',
     coverImageAlt: '',     // CUSTOMIZE
-    orientation: 'portrait',
+    orientation: 'landscape',
     photos: [
       {
         src: '/images/10/16de40af-b452-49b8-8ac9-2481660d708a.jpg',
@@ -472,6 +472,26 @@ export const memories: Memory[] = [
     secretNote: 'I already knew. I just wasn\'t ready to admit it yet.',
   },
 
+  // ── Memory 13 ──────────────────────────────────────────────────────────────
+  {
+    id: '13',
+    title: 'Zomgewürfelte Momente',                          // CUSTOMIZE
+    date: '2025',                                // CUSTOMIZE
+    location: 'Everywhere',                       // CUSTOMIZE
+    coverImage: '/images/13/IMG_6217.JPEG',
+    coverImageAlt: 'Memory 13',                  // CUSTOMIZE
+    orientation: 'portrait',
+    photos: [
+      { src: '/images/13/IMG_6217.JPEG', caption: 'Skateboardn muss i nu bissl üben' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6212.JPEG', caption: 'Sunset <3' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6136.JPEG', caption: 'Glorious Bastards' },  // CUSTOMIZE
+      { src: '/images/13/IMG_5268.JPEG', caption: 'Mohnnudelfabrik' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6363.JPEG', caption: 'Catching Rainbows' },  // CUSTOMIZE
+      { src: '/images/13/62661b1d-b245-4a5b-bf15-118f543bd380.jpg', caption: 'Brauerrei-Führer Ali' },  // CUSTOMIZE
+      { src: '/images/13/IMG_6373.JPEG', caption: 'Kinoooo' },  // CUSTOMIZE
+    ],
+  },
+
   // ── Memory 11 ──────────────────────────────────────────────────────────────
   {
     id: '11',
@@ -499,7 +519,7 @@ export const memories: Memory[] = [
     location: 'Online',                       // CUSTOMIZE
     coverImage: '/images/12/Bild1.png',
     coverImageAlt: 'Memory 12',                  // CUSTOMIZE
-    orientation: 'portrait',
+    orientation: 'landscape',
     photos: [
       { src: '/images/12/Bild1.png', caption: 'Always up for a smile <3' },  // CUSTOMIZE
       { src: '/images/12/IMG_9558.PNG', caption: 'Lockige Haareeeee'},  // CUSTOMIZE
@@ -507,26 +527,6 @@ export const memories: Memory[] = [
       { src: '/images/12/Bild2.png', caption: 'Einfach die Süßeste!' },  // CUSTOMIZE
       { src: '/images/12/IMG_7194.PNG', caption: '1 Plattform hat nie gereicht ;)' },  // CUSTOMIZE
       { src: '/images/12/IMG_9732.JPG', caption: 'Im Herzen warst immer dabei ;)' },  // CUSTOMIZE
-    ],
-  },
-
-  // ── Memory 13 ──────────────────────────────────────────────────────────────
-  {
-    id: '13',
-    title: 'Zomgewürfelte Momente',                          // CUSTOMIZE
-    date: '2025',                                // CUSTOMIZE
-    location: 'Everywhere',                       // CUSTOMIZE
-    coverImage: '/images/13/IMG_6217.JPEG',
-    coverImageAlt: 'Memory 13',                  // CUSTOMIZE
-    orientation: 'landscape',
-    photos: [
-      { src: '/images/13/IMG_6217.JPEG', caption: 'Skateboardn muss i nu bissl üben' },  // CUSTOMIZE
-      { src: '/images/13/IMG_6212.JPEG', caption: 'Sunset <3' },  // CUSTOMIZE
-      { src: '/images/13/IMG_6136.JPEG', caption: 'Glorious Bastards' },  // CUSTOMIZE
-      { src: '/images/13/IMG_5268.JPEG', caption: 'Mohnnudelfabrik' },  // CUSTOMIZE
-      { src: '/images/13/IMG_6363.JPEG', caption: 'Catching Rainbows' },  // CUSTOMIZE
-      { src: '/images/13/62661b1d-b245-4a5b-bf15-118f543bd380.jpg', caption: 'Brauerrei-Führer Ali' },  // CUSTOMIZE
-      { src: '/images/13/IMG_6373.JPEG', caption: 'Kinoooo' },  // CUSTOMIZE
     ],
   },
 
