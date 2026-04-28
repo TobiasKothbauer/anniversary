@@ -129,24 +129,24 @@ export const memories: Memory[] = [
     orientation: 'portrait',
     photos: [
       {
-        src: '/images/01/flammkuchen.jpeg',
-        caption: 'Vorfreude auf Flammkuchen',
-      },
-      {
         src: '/images/01/IMG_4537.JPEG',
         caption: 'Skipboooo woa unser Ding hehe',
-      },
-      {
-        src: '/images/01/IMG_4528.JPEG',
-        caption: 'Der Blick wenn ma se denk: Ned schlecht!',
       },
       {
         src: '/images/01/61f1983a-1792-4e59-95ed-04e156a6c2e9.jpg',    // CUSTOMIZE
         caption: '1 Minute später hab i verloren',
       },
+      {
+        src: '/images/01/flammkuchen.jpeg',
+        caption: 'Geilster Flammkuchen',
+      },
+      {
+        src: '/images/01/IMG_4528.JPEG',
+        caption: 'Der Blick wenn ma se denk: Ned schlecht!',
+      },
     ],
     // CUSTOMIZE: Something only she'll understand. Appears after last photo via ✦.
-    secretNote: 'I already knew. I just wasn\'t ready to admit it yet.',
+    secretNote: 'I already knew this is special',
   },
 
   // ── Memory 02 ──────────────────────────────────────────────────────────────
@@ -169,14 +169,9 @@ export const memories: Memory[] = [
         isEasterEgg: true,                         // marks this photo with a golden border
       },
       {
-        src: 'https://picsum.photos/seed/c02c/700/900',    // CUSTOMIZE
-        caption: 'The city became a backdrop.',
-      },
-      {
-        src: 'https://picsum.photos/seed/c02d/900/600',    // CUSTOMIZE
-        // CUSTOMIZE: a caption only you two would understand
-        caption: '[your inside joke or reference here]',
-      },
+        src: '/images/02/pomelo.jpeg',    // CUSTOMIZE
+        caption: 'Danach hats aber a Pomelo gebn ;)',   // CUSTOMIZE: specific detail
+      }
     ],
     secretNote: 'You laughed at something I said and I thought — there it is.',
   },
@@ -202,10 +197,7 @@ export const memories: Memory[] = [
       {
         src: '/images/03/IMG_4881.JPEG',    // CUSTOMIZE
         caption: 'Upsii, kann passieren ;)', // CUSTOMIZE
-      },
-      {
-        src: 'https://picsum.photos/seed/c03c/600/750',    // CUSTOMIZE
-      },
+      }
     ],
   },
 
@@ -225,20 +217,12 @@ export const memories: Memory[] = [
       },
       {
         src: '/images/04/IMG_4814.JPEG',    // CUSTOMIZE
-        caption: 'lachs hat danach besonders gut gschmeckt  ;)',
+        caption: 'Lachs hat danach besonders gut gschmeckt ;)',
       },
       {
         src: '/images/04/IMG_4799.JPEG',    // CUSTOMIZE
-        caption: 'vom auto was holen.. mit style!',
-      },
-      {
-        src: 'https://picsum.photos/seed/c04c/700/900',    // CUSTOMIZE
-        caption: 'This exact moment.',                     // CUSTOMIZE
-        isEasterEgg: true,
-      },
-      {
-        src: 'https://picsum.photos/seed/c04d/900/600',    // CUSTOMIZE
-      },
+        caption: 'Vom auto was holen... mit style!',
+      }
     ],
     secretNote: 'You were mid-sentence about something when I decided I was in serious trouble.',
   },
@@ -405,11 +389,11 @@ export const memories: Memory[] = [
     photos: [
       {
         src: '/images/09/IMG_4839.JPEG',
-        caption: '<3>',
+        caption: '<3',
       },
       {
         src: '/images/09/269ed78a-b4c0-4c1b-ac6e-e74f1376c6b3.JPEG',
-        caption: 'Tobi in Lederhose',
+        caption: 'Tobi in Lederhose :O',
       },
       {
         src: '/images/09/IMG_5912.JPEG',
@@ -521,7 +505,7 @@ export const memories: Memory[] = [
       { src: '/images/12/IMG_9558.PNG', caption: 'Lockige Haareeeee'},  // CUSTOMIZE
       { src: '/images/12/IMG_2728.PNG', caption: 'Zusammen schlafen genießen'},  // CUSTOMIZE
       { src: '/images/12/Bild2.png', caption: 'Einfach die Süßeste!' },  // CUSTOMIZE
-      { src: '/images/12/IMG_7194.PNG', caption: '1 Plattform hat ned gereicht ;)' },  // CUSTOMIZE
+      { src: '/images/12/IMG_7194.PNG', caption: '1 Plattform hat nie gereicht ;)' },  // CUSTOMIZE
       { src: '/images/12/IMG_9732.JPG', caption: 'Im Herzen warst immer dabei ;)' },  // CUSTOMIZE
     ],
   },
@@ -599,10 +583,10 @@ export const memories: Memory[] = [
     orientation: 'portrait',
     photos: [
       { src: '/images/16/IMG_2459.JPEG', caption: 'Wellness-Abend' },  // CUSTOMIZE
-      { src: '/images/16/IMG_2365.JPEG', caption: 'Es woa so gut' },  // CUSTOMIZE
-      { src: '/images/16/IMG_2349.JPEG', caption: 'A paar Plastiksackerl' },  // CUSTOMIZE
-      { src: '/images/16/IMG_2078.JPEG', caption: 'Vorstufe Grand Canyon'},  // CUSTOMIZE
-      { src: '/images/16/IMG_2386.JPEG', caption: 'Leider haben mas ned aufd Leinwand gschafft' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2365.JPEG', caption: 'Es woa so gut *.*' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2349.JPEG', caption: 'A paar Plastiksacker...' },  // CUSTOMIZE
+      { src: '/images/16/IMG_2078.JPEG', caption: 'Vorstufe Grand Canyon ;)'},  // CUSTOMIZE
+      { src: '/images/16/IMG_2386.JPEG', caption: 'Leider haben mas ned aufd Leinwand gschafft :(' },  // CUSTOMIZE
     ],
   },
 
