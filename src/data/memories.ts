@@ -89,7 +89,7 @@ export const siteConfig: SiteConfig = {
   heroTitle:       'A Year\nWith You',
   heroSubtitle:    'Twelve months. Many moments. One year of us.',
   heroCtaText:     'Begin our story',
-  distanceKm:      '9,000',                   // CUSTOMIZE
+  distanceKm:      '8,000',                   // CUSTOMIZE
   distanceLabel:   'Atlantic Ocean',           // CUSTOMIZE
   wallIntro:       'Click any memory to open it. Some have more inside than you might expect.',
 }
@@ -664,40 +664,52 @@ export interface StoryMoment {
 export const storyMoments: StoryMoment[] = [
   {
     id: 'sm-1',
-    date: 'April 2025',                                          // CUSTOMIZE
-    title: 'An unexpected beginning.',
-    text: 'These things don\'t announce themselves. One day you\'re living your life, and then — slowly, then all at once — there\'s someone in it you can\'t quite imagine not having.',
+    date: 'November 2024',                                          // CUSTOMIZE
+    title: 'Wie alles begann',
+    text: 'Bumble sei dank... und paar Tage später haben ma se schon in echt getroffen beim Mensafest. Und zum Glück hast ma nu an Schlafplatz angeboten, sonst hätt i draußen schlafen müssen ;) ',
   },
   {
     id: 'sm-2',
-    date: 'May 2025',                                            // CUSTOMIZE
-    title: 'The long calls.',
-    text: 'We started talking the way people do when they\'re trying to figure something out. Late. Longer than necessary. About nothing important. About everything important.',
+    date: 'November 2024 - April 2025',                                            // CUSTOMIZE
+    title: 'Viele Erlebnisse',
+    text: 'Es hat vom ersten Moment an gefunkt und einfach gepasst. Alles war selbstverständlich, unkompliziert und hat se einfach richtig angefühlt. Jeder Trip, jedes treffn mit Freundesgruppen und a jeder chillige Abend daham.',
     secretId: 'secret-story',
   },
   {
     id: 'sm-3',
-    date: 'June 2025',                                           // CUSTOMIZE
-    title: 'The quiet ones.',
-    text: 'Not every memory is a story. Some are just — an afternoon. A laugh about something small. A look you remember without knowing exactly why.',
+    date: '30. April 2025',                                           // CUSTOMIZE
+    title: 'Es wurde offiziell!',
+    text: 'Dadurch haben ma auch entschieden, dass wir die Challenge "Amerika" annehmen würden. Es war uns beide aber klar, dass ma des schaffen würden und keiner hat gezweifelt. Des sagt schon sehr viel!',
   },
   {
     id: 'sm-4',
-    date: 'July 2025',                                           // CUSTOMIZE
-    title: 'Midsummer.',
-    text: 'This was the part of the year where I stopped pretending I wasn\'t completely gone on you. I think you already knew.',
+    date: 'Mai - August 2025',                                           // CUSTOMIZE
+    title: 'Gemeinsame Zeit nu ausnutzen',
+    text: 'Wir haben de restliche Zeit wirklich nu ausgenutzt ende nie! Haben viele Trips gemacht, vom Weinwandern bis hin zum Keramik bemalen bis hin zum gemütlichen See chillen.',
   },
   {
     id: 'sm-5',
-    date: 'August 2025',                                         // CUSTOMIZE
-    title: 'The airport.',
-    text: 'Airports used to be just airports. They\'re not that anymore. They\'re now places where I count down from ten and try to look calm.',
+    date: 'August 2025 - Dezember 2025',                                         // CUSTOMIZE
+    title: 'Long-distance Part 1',
+    text: 'Da Abschied war einfach nur hart und da Beginn war alles andere als easy, aber als wir uns daran gewohnt hobn machten wir einfach des Beste daraus. Des is uns mega gut gelungen!',
   },
   {
     id: 'sm-6',
-    date: 'September – March',                                   // CUSTOMIZE
-    title: 'Everything in between.',
-    text: 'The calls. The time zones. The small updates about nothing. The mornings where you were already in my afternoon. We built a whole world in the in-between.',
+    date: 'Dezember 2025 - Jänner 2026',                                   // CUSTOMIZE
+    title: 'Das Wiedersehen!',
+    text: 'Finally! Nach 4 langen Monaten endlich wieda vereint... Gefühl war einfach unbeschreiblich und am onfong hobn mas beide nu ned wirklich glauben können. Aber wir waren sofort wieda a eingespieltes Team und haben wirklich wahnsinnig coole Sache erlebt in de 3 Wochen <3',
+  },
+  {
+    id: 'sm-7',
+    date: 'Jänner 2026 - 29. April 2026',                                   // CUSTOMIZE
+    title: 'Long-distance Part 1',
+    text: 'Da Abschied war wieder einfach nur hart, mehr kann ma dazu ned sagen. Aber wir haben beide gewusst es is a Ende in Sicht und wir schaffen des a 2 mal auch nu. Die Zeit bis jetzt verging wahnsinnig schnell find i und kann gar ned sagen wie sehr i mi freu wenn ma uns in a paar Tagen endlich wieda sehn!',
+  },
+  {
+    id: 'sm-8',
+    date: '30. April 2026',                                   // CUSTOMIZE
+    title: 'Happy anniversary!',
+    text: 'Und heute ist es soweit... Jahrestag! Hoff du hast nu spaß mit der restlichen Webseite... Love uuuu <3',
   },
 ]
 
