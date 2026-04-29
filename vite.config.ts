@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // base: './' enables relative paths — required for deploying to a subdirectory
   // Change to '/' if deploying to a root domain (e.g. Vercel)
-  base: '/',
+  base: '/anniversary/',
 })
