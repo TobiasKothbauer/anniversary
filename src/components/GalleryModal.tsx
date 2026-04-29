@@ -182,7 +182,7 @@ export default function GalleryModal({ memory, onClose }: GalleryModalProps) {
                   />
                 )}
                 <img
-                  src={current.src}
+                  src={`${import.meta.env.BASE_URL}${current.src.replace(/^\//, '')}`}
                   alt={`${memory.title}, photo ${index + 1} of ${photos.length}`}
                   className="max-h-[62vh] max-w-full object-contain shadow-2xl"
                   style={{ display: 'block' }}

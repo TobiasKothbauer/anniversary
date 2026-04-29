@@ -149,7 +149,7 @@ function MemoryCard({ memory, baseRotation, isNewlyUnlocked, onSelect }: MemoryC
       {/* Photo area */}
       <div className={`relative overflow-hidden ${aspectClass}`}>
         <motion.img
-          src={memory.coverImage}
+          src={`${import.meta.env.BASE_URL}${memory.coverImage.replace(/^\//, '')}`}
           alt={memory.coverImageAlt}
           className="w-full h-full object-cover"
           animate={{ scale: hovered ? 1.06 : 1 }}
