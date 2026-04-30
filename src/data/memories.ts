@@ -145,8 +145,6 @@ export const memories: Memory[] = [
         caption: 'Der Blick wenn ma se denk: Ned schlecht!',
       },
     ],
-    // CUSTOMIZE: Something only she'll understand. Appears after last photo via ✦.
-    secretNote: 'I already knew this is special',
   },
 
   // ── Memory 02 ──────────────────────────────────────────────────────────────
@@ -173,7 +171,6 @@ export const memories: Memory[] = [
         caption: 'Danach hats aber a Pomelo gebn ;)',   // CUSTOMIZE: specific detail
       }
     ],
-    secretNote: 'You laughed at something I said and I thought — there it is.',
   },
 
   // ── Memory 03 ──────────────────────────────────────────────────────────────
@@ -224,7 +221,6 @@ export const memories: Memory[] = [
         caption: 'Vom auto was holen... mit style!',
       }
     ],
-    secretNote: 'You were mid-sentence about something when I decided I was in serious trouble.',
   },
 
   // ── Memory 05 ──────────────────────────────────────────────────────────────
@@ -349,7 +345,6 @@ export const memories: Memory[] = [
         caption: 'schau mal, a blumeee',
       },
     ],
-    secretNote: 'Seeing you again was worth every terrible minute of that flight.',
   },
 
   // ── Memory 08 ──────────────────────────────────────────────────────────────
@@ -375,7 +370,6 @@ export const memories: Memory[] = [
         caption: 'July By Tobi',
       },
     ],
-    secretNote: 'I stayed up until 6am just to be awake when your midnight happened.',
   },
   // ── Memory 09 ──────────────────────────────────────────────────────────────
   {
@@ -420,8 +414,6 @@ export const memories: Memory[] = [
         caption: 'JKU Sommerfest mit Jaki',
       },
     ],
-    // CUSTOMIZE: Something only she'll understand. Appears after last photo via ✦.
-    secretNote: 'I already knew. I just wasn\'t ready to admit it yet.',
   },
   // ── Memory 10 ──────────────────────────────────────────────────────────────
   {
@@ -469,7 +461,6 @@ export const memories: Memory[] = [
         caption: 'Des is dafür wirklich süß wordn',
       },
     ],
-    secretNote: 'I already knew. I just wasn\'t ready to admit it yet.',
   },
 
   // ── Memory 13 ──────────────────────────────────────────────────────────────

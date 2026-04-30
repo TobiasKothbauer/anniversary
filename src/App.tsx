@@ -7,11 +7,7 @@ import ChapterDivider from './components/ChapterDivider'
 import StoryScroll from './components/StoryScroll'
 import MemoryWall from './components/MemoryWall'
 import DistanceBridge from './components/DistanceBridge'
-import LoveNote from './components/LoveNote'
-import FinalMessage from './components/FinalMessage'
 import GalleryModal from './components/GalleryModal'
-import LetterModal from './components/LetterModal'
-import ExplorationTracker from './components/ExplorationTracker'
 import SecretFoundBanner from './components/SecretFoundBanner'
 import type { Memory } from './data/memories'
 
@@ -19,7 +15,6 @@ import type { Memory } from './data/memories'
 function AppInner() {
   const { incrementOpenedMemories } = useAdventure()
   const [selectedMemory, setSelectedMemory] = useState<Memory | null>(null)
-  const [isLetterOpen, setIsLetterOpen]     = useState(false)
 
   const handleOpenMemory = (memory: Memory) => {
     setSelectedMemory(memory)
@@ -39,11 +34,6 @@ function AppInner() {
       <ChapterDivider number="III" title="Across the Distance" dark />
       <DistanceBridge />
 
-      <ChapterDivider number="IV" title="What I Want You to Know" />
-      <LoveNote onOpenLetter={() => setIsLetterOpen(true)} />
-
-      <FinalMessage />
-
       {/* Gallery modal */}
       <AnimatePresence>
         {selectedMemory && (
@@ -55,18 +45,7 @@ function AppInner() {
         )}
       </AnimatePresence>
 
-      {/* Surprise letter modal */}
-      <AnimatePresence>
-        {isLetterOpen && (
-          <LetterModal
-            key="letter"
-            onClose={() => setIsLetterOpen(false)}
-          />
-        )}
-      </AnimatePresence>
-
       {/* Fixed UI overlays */}
-      <ExplorationTracker />
       <SecretFoundBanner />
     </main>
   )
